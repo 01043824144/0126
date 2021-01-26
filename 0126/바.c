@@ -15,13 +15,16 @@ int main(void) {
 
 	
 	//2진수
-		whlie(temp != 0) {
+	while (temp != 0) {
 			binary[i] = temp % 2;
+			temp /= 2;
+			i++;
 	}
 
 		//logic
 	printf("\n변환된 2진수는:");
-	for (int j =0 ; j<10;j++){
+	
+	for (int j =i-1 ; j>=0;j--){
 		printf("%d", binary[j]);
 
 	}
